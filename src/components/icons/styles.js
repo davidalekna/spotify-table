@@ -7,6 +7,15 @@ export const IconWrapper = styled.div`
   flex: 0 0 auto;
   width: 24px;
   height: 24px;
-  outline: 1px dashed orange;
-  fill: ${({ fill }) => fill || 'white'};
+  cursor: pointer;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: ${({ fill, theme }) => fill || theme.neutral};
+
+    &:hover {
+      fill: ${({ theme }) => theme.primary};
+    }
+  }
 `;

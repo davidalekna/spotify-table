@@ -5,7 +5,7 @@ const MenuBlock = ({ heading, list }) => (
   <Block>
     {heading && <BlockHeading>{heading}</BlockHeading>}
     {list.map((child, index) => (
-      <BlockLink to={child.link} key={index}>
+      <BlockLink key={index} to={child.link} exact>
         {child.title}
       </BlockLink>
     ))}

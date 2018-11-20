@@ -1,6 +1,6 @@
 export default {
   one: {
-    primary: Object.assign('#333', {
+    primary: Object.assign('#FFF', {
       200: '',
       400: '',
     }), // 5-10 of lighter and darker shades
@@ -9,7 +9,9 @@ export default {
       900: '#242424',
     }), // 8-10 shades
     accents: {
-      feature: {}, // 5-10
+      feature: {
+        600: '#57b560',
+      }, // 5-10
       success: {}, // 5-10
       danger: {}, // 5-10
       warning: {}, // 5-10

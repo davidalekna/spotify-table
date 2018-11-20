@@ -104,7 +104,7 @@ export const Root = styled.div`
   width: 100vw;
   height: 100vh;
   background: rgba(23, 23, 23, 1);
-  grid-template-rows: 1fr 1fr 100px;
+  grid-template-rows: 1fr 1fr 80px;
   grid-template-columns: 220px 1fr 250px;
   grid-template-areas:
     'sidebar main friends'

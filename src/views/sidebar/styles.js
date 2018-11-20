@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FlexCol } from '../../components/globals';
 import { H4 } from 'src/components/globals';
 
@@ -22,14 +22,38 @@ export const Block = styled(FlexCol)`
   margin: 10px 0;
 `;
 
-export const BlockLink = styled(Link)`
+export const BlockLink = styled(NavLink).attrs(({ theme }) => ({
+  // NOTE: theme not accessable yet but commit has been merge, wait for next version
+  activeStyle: {
+    fontWeight: 'bold',
+    color: '#57b560',
+    // color: theme.accents.feature['600'],
+  },
+}))`
   font-size: 0.85em;
   font-weight: 600;
   padding: 5px 20px;
-  color: #ccc;
+  color: ${({ theme }) => theme.neutral};
   cursor: pointer;
 
   &:hover {
-    color: white;
+    color: ${({ theme }) => theme.primary};
   }
 `;
+
+// .attrs({
+//   activeStyle: ({ theme }) => ({
+//     fontWeight: 'bold',
+//     color: theme.accents.feature['600'],
+//   }),
+// })`
+//   font-size: 0.85em;
+//   font-weight: 600;
+//   padding: 5px 20px;
+//   color: ${({ theme }) => theme.neutral};
+//   cursor: pointer;
+
+//   &:hover {
+//     color: ${({ theme }) => theme.primary};
+//   }
+// `;
