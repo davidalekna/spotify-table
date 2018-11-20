@@ -40,20 +40,3 @@ export const BlockLink = styled(NavLink).attrs(({ theme }) => ({
     color: ${({ theme }) => theme.primary};
   }
 `;
-
-// .attrs({
-//   activeStyle: ({ theme }) => ({
-//     fontWeight: 'bold',
-//     color: theme.accents.feature['600'],
-//   }),
-// })`
-//   font-size: 0.85em;
-//   font-weight: 600;
-//   padding: 5px 20px;
-//   color: ${({ theme }) => theme.neutral};
-//   cursor: pointer;
-
-//   &:hover {
-//     color: ${({ theme }) => theme.primary};
-//   }
-// `;
