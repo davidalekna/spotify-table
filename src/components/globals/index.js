@@ -105,9 +105,16 @@ export const Root = styled.div`
   height: 100vh;
   background: rgba(23, 23, 23, 1);
   grid-template-rows: 1fr 1fr 100px;
-  grid-template-columns: 220px 1fr 280px;
+  grid-template-columns: 220px 1fr 250px;
   grid-template-areas:
     'sidebar main friends'
     'sidebar main friends'
     'player player player';
+
+  @media (max-width: 1100px) {
+    grid-template-areas:
+      'sidebar main main'
+      'sidebar main main'
+      'player player player';
+  }
 `;

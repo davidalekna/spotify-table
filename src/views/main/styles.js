@@ -4,10 +4,15 @@ import { FlexCol, FlexRow } from '../../components/globals';
 export const Wrapper = styled.div`
   grid-area: main;
   overflow-x: auto;
+`;
+
+export const WrapperGradiant = styled.div`
+  height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(57, 57, 57, 0.8),
-    rgba(23, 23, 23, 1) 30%
+    rgba(62, 62, 62, 1) 30%,
+    rgba(23, 23, 23, 1),
+    rgba(23, 23, 23, 1)
   );
 `;
 

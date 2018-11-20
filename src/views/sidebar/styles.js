@@ -6,10 +6,12 @@ export const Wrapper = styled(FlexCol)`
   grid-area: sidebar;
   background: ${({ theme }) => theme.neutral['800']};
   user-select: none;
+  overflow-x: auto;
 `;
 
 export const BlockHeading = styled(H4)`
   padding: 5px 20px;
+  font-size: 0.8em;
   text-transform: uppercase;
   cursor: default;
 `;
@@ -20,7 +22,7 @@ export const Block = styled.ul`
 `;
 
 export const BlockItem = styled.li`
-  font-size: 0.9em;
+  font-size: 0.85em;
   font-weight: 600;
   padding: 5px 20px;
   cursor: pointer;

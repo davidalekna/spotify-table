@@ -1,11 +1,13 @@
 import React from 'react';
-import { Wrapper, Header, Preview, Table } from './styles';
+import { Wrapper, WrapperGradiant, Header, Preview, Table } from './styles';
 
 const Main = () => (
   <Wrapper>
-    <Header>header</Header>
-    <Preview>preview</Preview>
-    <Table>table</Table>
+    <WrapperGradiant>
+      <Header>header</Header>
+      <Preview>preview</Preview>
+      <Table>table</Table>
+    </WrapperGradiant>
   </Wrapper>
 );
 
