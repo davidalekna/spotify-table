@@ -1,11 +1,13 @@
 import React from 'react';
-import { Block, BlockItem, BlockHeading } from '../styles';
+import { Block, BlockLink, BlockHeading } from '../styles';
 
-const MenuBlock = ({ heading, children }) => (
+const MenuBlock = ({ heading, list }) => (
   <Block>
     {heading && <BlockHeading>{heading}</BlockHeading>}
-    {React.Children.map(children, child => (
-      <BlockItem>{child}</BlockItem>
+    {list.map((child, index) => (
+      <BlockLink to={child.link} key={index}>
+        {child.title}
+      </BlockLink>
     ))}
   </Block>
 );

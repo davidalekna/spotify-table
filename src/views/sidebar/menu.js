@@ -1,24 +1,29 @@
 export default [
   {
     heading: null,
-    list: ['Browse', 'Radio'],
+    list: [{ title: 'Browse', link: '/' }, { title: 'Radio', link: '/radio' }],
   },
   {
     heading: 'Your Library',
     list: [
-      'Made For You',
-      'Recently Played',
-      'Songs',
-      'Albums',
-      'Artists',
-      'Stations',
-      'Local Files',
-      'Videos',
-      'Podcasts',
+      { title: 'Made For You', link: '/' },
+      { title: 'Recently Played', link: '/' },
+      { title: 'Songs', link: '/' },
+      { title: 'Albums', link: '/' },
+      { title: 'Artists', link: '/' },
+      { title: 'Stations', link: '/' },
+      { title: 'Local Files', link: '/' },
+      { title: 'Videos', link: '/' },
+      { title: 'Podcasts', link: '/' },
     ],
   },
   {
     heading: 'Playlists',
-    list: ['Liked from Radio', 'D and B', 'Chillpop', 'Bangers'],
+    list: [
+      { title: 'Liked from Radio', link: '/' },
+      { title: 'D and B', link: '/' },
+      { title: 'Chillpop', link: '/' },
+      { title: 'MaBangers', link: '/' },
+    ],
   },
 ];

@@ -1,13 +1,17 @@
-import React from 'react';
-import { Wrapper, WrapperGradiant, Header, Preview, Table } from './styles';
+import React, { Suspense } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { Wrapper } from './styles';
+import routes from './routes';
 
 const Main = () => (
   <Wrapper>
-    <WrapperGradiant>
-      <Header>header</Header>
-      <Preview>preview</Preview>
-      <Table>table</Table>
-    </WrapperGradiant>
+    <Suspense fallback={null}>
+      <Switch>
+        {routes.map((route, index) => (
+          <Route key={index} {...route} />
+        ))}
+      </Switch>
+    </Suspense>
   </Wrapper>
 );
 

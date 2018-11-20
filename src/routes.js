@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './reset.css';
 import theme from './helpers/theme';
@@ -12,13 +13,15 @@ class App extends React.Component {
   render() {
     return (
       <ThemeProvider theme={theme['one']}>
-        <Root>
-          <GlobalStyle />
-          <Friends />
-          <Main />
-          <Player />
-          <Sidebar />
-        </Root>
+        <Router>
+          <Root>
+            <GlobalStyle />
+            <Friends />
+            <Main />
+            <Player />
+            <Sidebar />
+          </Root>
+        </Router>
       </ThemeProvider>
     );
   }

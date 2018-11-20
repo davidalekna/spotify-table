@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { FlexCol } from '../../components/globals';
 import { H4 } from 'src/components/globals';
 
@@ -16,15 +17,16 @@ export const BlockHeading = styled(H4)`
   cursor: default;
 `;
 
-export const Block = styled.ul`
+export const Block = styled(FlexCol)`
   list-style: none;
   margin: 10px 0;
 `;
 
-export const BlockItem = styled.li`
+export const BlockLink = styled(Link)`
   font-size: 0.85em;
   font-weight: 600;
   padding: 5px 20px;
+  color: #ccc;
   cursor: pointer;
 
   &:hover {
