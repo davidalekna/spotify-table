@@ -11,7 +11,7 @@ import Sidebar from './views/sidebar';
 class App extends React.Component {
   render() {
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme['one']}>
         <Root>
           <GlobalStyle />
           <Friends />

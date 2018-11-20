@@ -3,5 +3,5 @@ import { FlexCol } from '../../components/globals';
 
 export const Wrapper = styled(FlexCol)`
   grid-area: sidebar;
-  background: rgba(19, 19, 19, 1);
+  background: ${({ theme }) => theme.neutral['800']};
 `;
