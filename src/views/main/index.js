@@ -7,9 +7,9 @@ const Main = () => (
   <Wrapper>
     <Suspense fallback={null}>
       <Switch>
-        {routes.map((route, index) => (
-          <Route key={index} {...route} />
-        ))}
+        {routes.map(section =>
+          section.list.map((route, index) => <Route key={index} {...route} />),
+        )}
       </Switch>
     </Suspense>
   </Wrapper>

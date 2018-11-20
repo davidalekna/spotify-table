@@ -1,7 +1,7 @@
 import React from 'react';
 import { Wrapper } from './styles';
 import MenuBlock from './components/MenuBlock';
-import menu from './menu';
+import menu from '../main/routes';
 
 const Sidebar = () => (
   <Wrapper>
