@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     line-height: 1.5;
     background-color: #ffffff;
-    color: #eee;
+    color: #ccc;
     padding: 0;
     margin: 0;
     -webkit-font-smoothing: antialiased;
