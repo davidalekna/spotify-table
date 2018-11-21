@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
 import routes from './routes';
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   grid-area: main;
   overflow-x: auto;
 `;

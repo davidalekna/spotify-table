@@ -7,6 +7,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "downshift": "^3.1.5",
+    "ramda": "^0.26.0",
     "react": "^16.6.3",
     "react-data-browser": "^1.0.0",
     "react-dom": "^16.6.3",

@@ -21,6 +21,7 @@ export const Table = styled(FlexCol)`
 
 export const WrapperGradiant = styled.div`
   height: 100%;
+  padding: 0 40px;
   background: linear-gradient(
     to bottom,
     rgba(62, 62, 62, 1) 30%,
