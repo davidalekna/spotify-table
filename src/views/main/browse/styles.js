@@ -16,7 +16,6 @@ export const Preview = styled(FlexRow)`
 export const Table = styled(FlexCol)`
   flex: 1 1 auto;
   height: 100%;
-  border: 1px dashed orange;
 `;
 
 export const WrapperGradiant = styled.div`
@@ -24,8 +23,7 @@ export const WrapperGradiant = styled.div`
   padding: 0 40px;
   background: linear-gradient(
     to bottom,
-    rgba(62, 62, 62, 1) 30%,
-    rgba(23, 23, 23, 1),
-    rgba(23, 23, 23, 1)
+    rgba(62, 62, 62, 1),
+    rgba(23, 23, 23, 1) 40%
   );
 `;

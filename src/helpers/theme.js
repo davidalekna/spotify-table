@@ -4,7 +4,7 @@ export default {
       200: '',
       400: '',
     }), // 5-10 of lighter and darker shades
-    neutral: Object.assign('#CCC', {
+    neutral: Object.assign('#888', {
       800: '#131313',
       900: '#242424',
     }), // 8-10 shades

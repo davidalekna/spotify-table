@@ -9,9 +9,8 @@ export const TableHead = styled(FlexRow)`
   flex: 0 0 auto;
   height: 46px;
   color: black;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid ${({ theme }) => theme.neutral['900']};
   padding: 0 5px;
-  font-size: 12px;
 `;
 
 export const TableHeadRow = styled(FlexRow)`
@@ -26,24 +25,30 @@ export const TableHeadRowItem = styled(FlexRow)`
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  width: ${({ width }) => `${width}px` || 'auto'};
+  flex: ${({ flex }) => flex || '1 1 auto'};
+
+  font-size: 0.75em;
+  font-weight: 600;
+  color: ${({ theme }) => theme.neutral};
 `;
 
 export const TableBody = styled(FlexCol)`
   flex: 1 1 auto;
-  padding: 0 5px;
 `;
 
 export const TableBodyRow = styled(FlexRow)`
   flex: 0 0 auto;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid ${({ theme }) => theme.neutral['900']};
 `;
 
 export const TableBodyRowItem = styled(FlexRow)`
   height: 46px;
+  width: ${({ width }) => `${width}px` || 'auto'};
+  flex: ${({ flex }) => flex || '1 1 auto'};
   align-items: center;
   justify-content: flex-start;
   padding: 0 10px;
-  font-size: 14px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

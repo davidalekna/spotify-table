@@ -14,21 +14,27 @@ import {
   TableBodyRowItem,
 } from 'src/components/tableBase/styles';
 
-const data = [];
-
-const Browse = () => (
+const Browse = ({ data = [{}, {}, {}], fixedWidth = 40 }) => (
   <WrapperGradiant>
     <Header>header</Header>
     <Preview>preview</Preview>
     <Table>
       <DataBrowser
-        initialColumnFlex={['0 0 25%', '1 1 35%', '0 0 20%', '0 0 20%']}
+        initialColumnFlex={[
+          '1 1 40%',
+          '0 0 15%',
+          '0 0 15%',
+          '0 0 15%',
+          '0 0 15%',
+        ]}
         columns={columns}
       >
         {({ columnFlex, visibleColumns, defaultSortMethod }) => (
           <TableBase>
             <TableHead>
               <TableHeadRow>
+                <TableHeadRowItem width={fixedWidth} flex="0 0 auto" />
+                <TableHeadRowItem width={fixedWidth} flex="0 0 auto" />
                 {visibleColumns.map((cell, index) => (
                   <TableHeadRowItem
                     key={index}
@@ -42,6 +48,12 @@ const Browse = () => (
             <TableBody>
               {sort(defaultSortMethod, data).map((row, key) => (
                 <TableBodyRow key={key}>
+                  <TableBodyRowItem width={fixedWidth} flex="0 0 auto">
+                    play
+                  </TableBodyRowItem>
+                  <TableBodyRowItem width={fixedWidth} flex="0 0 auto">
+                    +
+                  </TableBodyRowItem>
                   {visibleColumns.map(({ label, sortField }, index) => (
                     <TableBodyRowItem
                       key={sortField}

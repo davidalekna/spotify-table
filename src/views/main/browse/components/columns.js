@@ -1,6 +1,7 @@
 export default [
-  { label: 'email', sortField: 'email', isLocked: true },
-  { label: 'firstname', sortField: 'profile.firstName' },
-  { label: 'roles', sortField: 'companies' },
-  { label: 'lastname', sortField: 'profile.lastName' },
+  { label: 'title', sortField: 'title', isLocked: true },
+  { label: 'artist', sortField: 'artist' },
+  { label: 'album', sortField: 'album' },
+  { label: 'date', sortField: 'date' },
+  { label: 'time', sortField: 'time' },
 ];
